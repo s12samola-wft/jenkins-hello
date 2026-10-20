@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the app...'
+                echo 'Building the app from Git!'
                 sh 'ls -la'
                 sh 'mkdir -p build && echo "app v1" > build/app.txt'
             }
